@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/700.css";
 :root {
   --background: #ffffff;
   --foreground: #171717;
