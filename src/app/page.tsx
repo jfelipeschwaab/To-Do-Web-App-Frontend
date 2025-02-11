@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-row bg-sky-950">
       <div className="min-h-screen bg-sky-950 flex  justify-center">
-        <div className="shadow-2xl p-8 rounded-lg bg-white h-1/3 flex flex-col items-center w-full">
+        <div className="shadow-2xl p-8 rounded-lg bg-white h-5/6 flex flex-col items-center w-full my-auto">
           <h1 className="text-4xl text-black mb-4 font-sans font-extrabold">
             Bem-vindo à sua lista de afazeres
           </h1>

@@ -8,15 +8,17 @@ import { FaCheckSquare } from "react-icons/fa"; // Importe o ícone de checkbox 
 
 export default function Header() {
   return (
-    <header className="bg-slate-900 shadow-md">
+    <header className="bg-slate-900 shadow-md sticky top-0 z-50 h-1/6">
       <div className="container mx-auto py-4 flex justify-between items-center">
-        <h1 className="font-serif text-4xl">
-            Online to-do Application
+        <div className="flex flex-row justify-center items-center">
+          <h1 className="font-serif text-4xl">
+              Vou anotar!
+          </h1>
+          <FaCheckSquare className="ml-2 text-3xl text-green-500" /> {/* Ícone de checkbox marcado */}
+        </div>
+        <h1 className="font-serif text-2xl">
+          Online to-do-application
         </h1>
-        <FaCheckSquare className="mr-2 text-3xl text-green-500" /> {/* Ícone de checkbox marcado */}
-
-        
-
       </div>
     </header>
   );
