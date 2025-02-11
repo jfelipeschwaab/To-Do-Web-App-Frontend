@@ -40,12 +40,12 @@ export default function Typewriter({ texts, delay, pauseBetweenTexts = 1000 }: T
   return (
     <div className="flex flex-col">
       {displayedTexts.map((text, index) => (
-        <p key={index} className="text-2xl text-[#E1E7EF] font-serif font-bold">
+        <p key={index} className="text-2xl text-[#E1E7EF] font-serif font-extralight">
           {text}
         </p>
       ))}
       {textIndex < texts.length && (
-        <p className="text-2xl text-[#E1E7EF] font-serif font-bold">
+        <p className="text-2xl text-[#E1E7EF] font-serif font-extralight">
           {currentText}
           <span className="cursor">|</span>
         </p>
