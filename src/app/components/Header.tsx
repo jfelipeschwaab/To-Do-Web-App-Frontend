@@ -8,7 +8,7 @@ import { FaCheckSquare } from "react-icons/fa"; // Importe o ícone de checkbox 
 
 export default function Header() {
   return (
-    <header className="bg-slate-900 shadow-md">
+    <header className="bg-[#030711] shadow-md">
       <div className="container mx-auto py-4 flex justify-between items-center">
         <div className="flex flex-row justify-center items-center">
           <h1 className="font-serif text-4xl">

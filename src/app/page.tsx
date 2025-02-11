@@ -1,17 +1,19 @@
 import { ListTodo, CalendarCheck, Brain } from "lucide-react";
 import Typewriter from "../app/components/Typewriter";
+import { FaCheckSquare } from "react-icons/fa"; // Importe o ícone de checkbox marcado
 
 export default function HomePage() {
   return (
-    <main className="flex flex-row bg-sky-950">
-      <div className="min-h-screen bg-sky-950 flex justify-center w-1/2">
-        <div className="shadow-2xl p-8 rounded-lg bg-white h-full flex flex-col w-full my-auto">
+    <main className="flex flex-row bg-[#0C1117]">
+      <div className="min-h-screen bg-[#0C1117] flex justify-center w-1/2">
+        <div className="shadow-2xl p-8 rounded-lg bg-[#2D353C] h-full flex flex-col w-full my-auto">
           <div>
-            <h1 className="text-5xl text-stone-800 my-12 font-sans font-extrabold text-center">
-              BEM-VINDO À SUA LISTA DE AFAZERES
+            <h1 className="text-6xl text-[#E1E7EF] my-12 font-sans font-extrabold ">
+              Bem-vindo ao Vou Anotar!
+
             </h1>
-            <h3 className="text-3xl text-stone-800 mb-12 font-sans font-semibold">
-              <span className="text-white text-3xl font-sans font-semibold bg-cyan-800 p-1 rounded-md">
+            <h3 className="text-3xl text-[#E1E7EF] mb-12 font-sans font-semibold ">
+              <span className="text-[#E1E7EF] text-3xl font-sans font-semibold p-1 rounded-md bg-[#0C33BC]">
                 Gerencie
               </span> suas tarefas de forma simples e eficiente!
             </h3>
@@ -30,14 +32,14 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 space-y-4">
-            <h2 className="text-3xl text-stone-950 font-sans font-medium">Benefícios de uma To-do List:</h2>
-            <h3 className="text-2xl text-stone-700 font-sans font-light flex items-center gap-3">
+            <h2 className="text-3xl text-[#E1E7EF] font-sans font-medium">Benefícios de uma To-do List:</h2>
+            <h3 className="text-2xl text-stone-400 font-sans font-light flex items-center gap-3">
               1. <ListTodo className="text-cyan-700" size={28} /> Listas organizadas com categorias.
             </h3>
-            <h3 className="text-2xl text-stone-700 font-sans font-light flex items-center gap-3">
+            <h3 className="text-2xl text-stone-400 font-sans font-light flex items-center gap-3">
               2. <CalendarCheck className="text-cyan-700" size={28} /> Nunca esqueça nenhuma tarefa.
             </h3>
-            <h3 className="text-2xl text-stone-700 font-sans font-light flex items-center gap-3">
+            <h3 className="text-2xl text-stone-400 font-sans font-light flex items-center gap-3">
               3. <Brain className="text-cyan-700" size={28} /> Foco e produtividade.
             </h3>
           </div>
