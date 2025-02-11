@@ -1,17 +1,27 @@
+import Typewriter from "../app/components/Typewriter";
+
+
 export default function HomePage() {
   return (
     <main className="flex flex-row bg-sky-950">
-      <div className="min-h-screen bg-sky-950 flex  justify-center">
-        <div className="shadow-2xl p-8 rounded-lg bg-white h-5/6 flex flex-col items-center w-full my-auto">
-          <h1 className="text-4xl text-black mb-4 font-sans font-extrabold">
-            Bem-vindo à sua lista de afazeres
-          </h1>
-          <p className="text-gray-600 mb-8 font-semibold font-sans">
-            Entre na sua conta e anote o que você precisa
-          </p>
-          <div className="space-x-4">
-            <a href="/login" className="px-6 py-2 bg-teal-800 text-white rounded-lg hover:bg-sky-600 text-xl">Login</a>
-            <a href="/register" className="px-6 py-2 bg-teal-800 rounded-lg hover:bg-sky-600 text-xl">Registrar</a>
+      <div className="min-h-screen bg-sky-950 flex justify-center w-1/2">
+        <div className="shadow-2xl p-8 rounded-lg bg-white h-full flex flex-col w-full my-auto">
+          <div>
+            <h1 className="text-5xl text-stone-800 my-12 font-sans font-extrabold text-center">
+              BEM-VINDO À SUA LISTA DE AFAZERES
+            </h1>
+            <h3 className="text-3xl text-stone-800 mb-12 font-sans font-semibold"><span className="text-white text-3xl font-sans font-semibold bg-cyan-800 p-1 rounded-md">Gerencie</span> suas tarefas de forma simples e eficiente!</h3>
+          </div>
+          <div className="mt-8 text-left">
+            <Typewriter 
+              texts={[
+                "Organize seu dia. ✅",
+                "Aumente sua produtividade. 🚀",
+                "Nunca mais esqueça uma tarefa! 📅"
+              ]} 
+              delay={100} 
+              pauseBetweenTexts={1500} 
+            />
           </div>
         </div>
       </div>
